@@ -1,18 +1,119 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NISHI-OGIKUBO — Discover somewhere new.</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="西荻窪を、住んでいる人の目線から。食、文化、信仰、歴史、人、店、散歩、まだ知られていないもの。">
+<title>西荻窪 — まだ知らない場所に、出会いにいく。</title>
 <style>
-:root{--ink:#171717;--paper:#f4f1ea;--muted:#77736b;--line:#d8d3c8;--accent:#d95f3f}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1280px;margin:auto;padding:0 34px}nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 34px;background:linear-gradient(var(--paper),rgba(244,241,234,.88),transparent);backdrop-filter:blur(5px)}.logo{font-weight:800;letter-spacing:.08em;font-size:14px}.navlinks{display:flex;gap:24px;font-size:12px;text-transform:uppercase;letter-spacing:.12em}.hero{min-height:92vh;display:grid;place-items:center;padding-top:80px}.hero-inner{width:100%;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:end}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}h1{font-size:clamp(64px,12vw,170px);line-height:.82;letter-spacing:-.07em;margin:0;font-weight:850}.hero-copy{max-width:340px;font-size:18px;line-height:1.55;margin-bottom:10px}.jp{font-size:13px;color:var(--muted);margin-top:18px}.scroll{margin-top:55px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.intro{padding:100px 0 120px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:70px}.intro h2{font-size:44px;line-height:1.02;letter-spacing:-.04em;margin:0}.intro p{font-size:24px;line-height:1.45;max-width:720px;margin:0}.categories{padding:70px 0 120px}.sectionhead{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:0}.sectionhead h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0}.sectionhead span{font-size:12px;color:var(--muted)}.catgrid{display:grid;grid-template-columns:repeat(4,1fr)}.cat{min-height:180px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 20px 22px 0;transition:.25s}.cat:nth-child(4n){border-right:0;padding-right:0}.cat:hover{background:#ebe7dd;padding-left:10px}.num{font-size:11px;color:var(--muted)}.cat h3{font-size:27px;margin:34px 0 8px;letter-spacing:-.03em}.cat p{font-size:13px;color:var(--muted);margin:0;line-height:1.5}.feature{padding:30px 0 130px}.featuregrid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:35px}.visual{min-height:600px;background:#222;position:relative;overflow:hidden;color:white;padding:35px;display:flex;align-items:end}.visual:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 25%,#9a6d4b 0 8%,transparent 9%),linear-gradient(130deg,#28342e,#71634c 45%,#222 46%)}.visual>*{position:relative}.visual h3{font-size:60px;line-height:.9;letter-spacing:-.06em;margin:0;max-width:520px}.side{display:grid;gap:22px}.story{background:#e7e2d7;padding:28px;min-height:289px}.story small{letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.story h3{font-size:32px;line-height:1;margin:45px 0 10px;letter-spacing:-.04em}.story p{font-size:14px;line-height:1.5;color:#5f5b54}.places{padding:70px 0 120px;border-top:1px solid var(--line)}.placegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:35px}.place{padding:0 24px 32px 0;margin:0 24px 35px 0;border-bottom:1px solid var(--line);min-height:190px}.tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}.place h3{font-size:28px;line-height:1;margin:18px 0 10px;letter-spacing:-.035em}.place p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}.cta{background:#191919;color:#f4f1ea;padding:110px 0}.cta h2{font-size:clamp(50px,8vw,110px);line-height:.86;letter-spacing:-.07em;margin:0 0 50px;max-width:850px}.cta p{max-width:500px;font-size:18px;line-height:1.5;color:#c9c5bd}.button{display:inline-block;border:1px solid #777;padding:15px 20px;margin-top:25px;font-size:11px;letter-spacing:.15em;text-transform:uppercase}footer{padding:25px 0;font-size:11px;color:var(--muted);display:flex;justify-content:space-between}@media(max-width:800px){.wrap{padding:0 20px}nav{padding:18px 20px}.navlinks{display:none}.hero-inner,.intro,.featuregrid{grid-template-columns:1fr}.hero{min-height:80vh}.hero-copy{margin-top:45px}.intro{gap:35px}.catgrid{grid-template-columns:repeat(2,1fr)}.cat:nth-child(4n){border-right:1px solid var(--line);padding-right:20px}.cat:nth-child(2n){border-right:0}.placegrid{grid-template-columns:1fr}.visual{min-height:460px}.visual h3{font-size:48px}}
-</style></head>
+:root{--ink:#171714;--paper:#f4f1e9;--paper2:#ebe6da;--muted:#77736b;--line:#d7d1c4;--red:#bd4d36;--green:#314a3b;--blue:#354c63}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Hiragino Sans","Yu Gothic",system-ui,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1320px,calc(100% - 48px));margin:auto}nav{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid rgba(215,209,196,.55);background:rgba(244,241,233,.82);backdrop-filter:blur(14px)}.logo{font-size:13px;font-weight:800;letter-spacing:.14em}.navlinks{display:flex;gap:25px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}.hero{min-height:100vh;padding:130px 0 60px;display:flex;flex-direction:column;justify-content:space-between}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}.hero-main{display:grid;grid-template-columns:1.4fr .6fr;gap:50px;align-items:end;margin:8vh 0}.hero h1{font-size:clamp(76px,13vw,190px);line-height:.77;letter-spacing:-.085em;margin:0;font-weight:900}.hero-copy{font-size:20px;line-height:1.65;max-width:360px}.hero-copy strong{font-weight:800}.jp-note{display:block;color:var(--muted);font-size:12px;line-height:1.8;margin-top:20px}.hero-bottom{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:15px;font-size:10px;letter-spacing:.13em;color:var(--muted)}section{padding:125px 0}.manifesto{border-top:1px solid var(--line);display:grid;grid-template-columns:.75fr 1.25fr;gap:90px}.manifesto h2{font-size:clamp(38px,5vw,70px);line-height:.95;letter-spacing:-.055em;margin:0}.manifesto-copy{font-size:24px;line-height:1.65;max-width:780px}.manifesto-copy p{margin:0 0 28px}.accent{color:var(--red)}.label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}.section-title{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:0}.section-title h2{font-size:12px;letter-spacing:.17em;text-transform:uppercase;margin:0}.section-title span{font-size:11px;color:var(--muted)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr)}.category{min-height:205px;padding:24px 22px 22px 0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:.25s}.category:nth-child(4n){border-right:0;padding-right:0}.category:hover{background:var(--paper2);padding-left:12px}.category .no{font-size:10px;color:var(--muted)}.category h3{font-size:29px;letter-spacing:-.04em;margin:42px 0 8px}.category p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}.feature{background:var(--green);color:#f3f0e8}.feature .section-title{border-color:rgba(243,240,232,.25)}.feature .section-title span,.feature .label{color:#bfc7bd}.feature-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:34px}.big-story{min-height:650px;padding:38px;display:flex;align-items:flex-end;position:relative;overflow:hidden;background:linear-gradient(135deg,#1c2b22,#64705a 47%,#a68a68 48%,#463d33)}.big-story:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-110px;top:-100px;border:1px solid rgba(255,255,255,.2);box-shadow:0 0 0 70px rgba(255,255,255,.03),0 0 0 140px rgba(255,255,255,.02)}.big-story div{position:relative;max-width:620px}.big-story h3{font-size:clamp(52px,7vw,100px);line-height:.82;letter-spacing:-.07em;margin:0}.big-story p{font-size:14px;line-height:1.6;max-width:460px;margin:25px 0 0;color:#d5d9d2}.stack{display:grid;gap:18px}.story-card{background:#e8e3d8;color:var(--ink);padding:28px;min-height:316px}.story-card:nth-child(2){background:#d6dfd5}.story-card .tag,.place .tag{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}.story-card h3{font-size:35px;line-height:.98;letter-spacing:-.05em;margin:58px 0 12px}.story-card p{font-size:13px;line-height:1.6;color:#625f57;margin:0}.research{background:var(--paper2)}.research-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin:34px 0 55px}.research-intro h3{font-size:43px;line-height:1;letter-spacing:-.05em;margin:0}.research-intro p{font-size:15px;line-height:1.8;color:#605c54;margin:0}.signal-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.signal{padding:26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:185px}.signal .big{font-size:42px;letter-spacing:-.06em}.signal h4{font-size:16px;margin:12px 0 7px}.signal p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}.places{padding-top:125px}.placegrid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:35px}.place{min-height:220px;padding:0 28px 30px 0;margin:0 28px 35px 0;border-bottom:1px solid var(--line)}.place h3{font-size:27px;line-height:1;letter-spacing:-.04em;margin:18px 0 11px}.place p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}.place small{display:block;font-size:10px;color:#9b968c;margin-top:18px}.routes{border-top:1px solid var(--line)}.route-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.route{padding:30px;background:#e7e2d7;min-height:250px}.route.dark{background:#1b1b19;color:#f4f1e9}.route h3{font-size:35px;letter-spacing:-.05em;margin:45px 0 12px;line-height:1}.route p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}.dark p{color:#b9b5ad}.community{background:var(--ink);color:var(--paper);padding:145px 0}.community h2{font-size:clamp(58px,9vw,130px);line-height:.8;letter-spacing:-.075em;max-width:1000px;margin:0 0 60px}.community p{font-size:18px;line-height:1.7;color:#c4c0b8;max-width:580px}.button{display:inline-block;border:1px solid #6f6c64;padding:15px 20px;margin-top:22px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.sources{padding:70px 0;border-top:1px solid var(--line)}.sourcegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:25px}.source{font-size:11px;line-height:1.5;color:var(--muted)}.source strong{display:block;color:var(--ink);margin-bottom:7px}footer{padding:25px 0;font-size:10px;color:var(--muted);display:flex;justify-content:space-between;border-top:1px solid var(--line)}
+@media(max-width:850px){.wrap{width:min(100% - 32px,1320px)}nav{padding:17px 16px}.navlinks{display:none}.hero-main,.manifesto,.feature-grid,.research-intro,.route-grid{grid-template-columns:1fr}.hero-main{gap:50px;margin:9vh 0}.hero h1{font-size:clamp(68px,19vw,130px)}.manifesto{gap:40px}.manifesto-copy{font-size:19px}.category-grid{grid-template-columns:repeat(2,1fr)}.category:nth-child(4n){border-right:1px solid var(--line);padding-right:22px}.category:nth-child(2n){border-right:0}.signal-grid{grid-template-columns:1fr}.placegrid{grid-template-columns:1fr}.place{margin-right:0}.big-story{min-height:500px}.community h2{font-size:clamp(55px,18vw,100px)}.sourcegrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
 <body>
-<nav><a class="logo" href="#">NISHI-OGIKUBO</a><div class="navlinks"><a href="#explore">Explore</a><a href="#places">Places</a><a href="#stories">Stories</a><a href="#add">Add yours</a></div></nav>
-<header class="hero wrap"><div class="hero-inner"><div><div class="kicker">Tokyo / Japan / 35.7033° N</div><h1>NISHI-<br>OGIKUBO.</h1><div class="scroll">↓ Scroll to discover</div></div><div class="hero-copy">You don't have to go far to discover somewhere new.<div class="jp">西荻窪には、まだ知らない場所がある。</div></div></div></header>
-<section class="intro wrap"><h2>A town is more than a list of places.</h2><p>It is the people who live there. The food they love. The old stories, small rituals, hidden rooms and streets that somehow feel different at dusk. This is an attempt to collect those things — together.</p></section>
-<section class="categories wrap" id="explore"><div class="sectionhead"><h2>Explore the town</h2><span>12 ways in</span></div><div class="catgrid"><a class="cat" href="#places"><span class="num">01</span><h3>Food</h3><p>What people here actually eat.</p></a><a class="cat" href="#places"><span class="num">02</span><h3>Café & Bar</h3><p>Quiet mornings, long nights.</p></a><a class="cat" href="#places"><span class="num">03</span><h3>Religion</h3><p>Shrines, temples and local beliefs.</p></a><a class="cat" href="#places"><span class="num">04</span><h3>Art & Culture</h3><p>Galleries, museums and makers.</p></a><a class="cat" href="#places"><span class="num">05</span><h3>Books</h3><p>Independent bookshops and old shelves.</p></a><a class="cat" href="#places"><span class="num">06</span><h3>People</h3><p>The people who make the town.</p></a><a class="cat" href="#places"><span class="num">07</span><h3>Nature</h3><p>Green spaces, rivers and slow walks.</p></a><a class="cat" href="#places"><span class="num">08</span><h3>History</h3><p>What was here before us.</p></a><a class="cat" href="#places"><span class="num">09</span><h3>Events</h3><p>Festivals, markets and local rituals.</p></a><a class="cat" href="#places"><span class="num">10</span><h3>Shops</h3><p>Things made, found and sold here.</p></a><a class="cat" href="#places"><span class="num">11</span><h3>Walks</h3><p>Ways to experience the neighborhood.</p></a><a class="cat" href="#places"><span class="num">12</span><h3>Hidden</h3><p>The things you won't find in a guidebook.</p></a></div></section>
-<section class="feature wrap" id="stories"><div class="sectionhead"><h2>Start somewhere unexpected</h2><span>Editor's selection</span></div><div class="featuregrid"><div class="visual"><h3>The art of getting a little lost.</h3></div><div class="side"><article class="story"><small>Hidden / Walk</small><h3>Take the long way home.</h3><p>Turn off the main road. Follow the little streets. Nishi-Ogikubo rewards people who don't rush.</p></article><article class="story"><small>People / Story</small><h3>Ask someone who lives here.</h3><p>The best guide to a town is often the person who has been walking its streets for twenty years.</p></article></div></div></section>
-<section class="places wrap" id="places"><div class="sectionhead"><h2>A few places to begin</h2><span>Prototype / Nishi-Ogikubo</span></div><div class="placegrid"><article class="place"><span class="tag">Books</span><h3>旅の本屋のまど</h3><p>A bookshop devoted to travel — a fitting place to begin a project about discovering places.</p></article><article class="place"><span class="tag">Books</span><h3>今野書店</h3><p>A neighborhood bookstore and one of the places that makes the area feel like a town rather than a station.</p></article><article class="place"><span class="tag">Books / Culture</span><h3>BREWBOOKS</h3><p>A small independent bookstore in the neighborhood.</p></article><article class="place"><span class="tag">Art</span><h3>ウレシカ</h3><p>Gallery and shop — one doorway into the creative side of Nishi-Ogikubo.</p></article><article class="place"><span class="tag">Café / Culture</span><h3>松庵文庫</h3><p>A place where books, food, architecture and neighborhood life meet.</p></article><article class="place"><span class="tag">Books / Night</span><h3>古本バル 月よみ堂</h3><p>Old books and a bar atmosphere — exactly the kind of hybrid place that deserves local context.</p></article><article class="place"><span class="tag">Culture</span><h3>杉並アニメーションミュージアム</h3><p>A cultural institution nearby that connects the neighborhood to Japan's animation culture.</p></article><article class="place"><span class="tag">Books / Café</span><h3>本の読める店 fuzkue</h3><p>A place designed around the pleasure of reading, staying and taking your time.</p></article><article class="place"><span class="tag">Local life</span><h3>西荻窪を歩く</h3><p>The real destination is the space between the places. This section will eventually become community-made walks.</p></article></div></section>
-<section class="cta" id="add"><div class="wrap"><h2>What do you know about this town?</h2><p>This is where the project becomes a community. Tell us about a place, a person, a story, a ritual, a street — anything that makes Nishi-Ogikubo feel like Nishi-Ogikubo.</p><a class="button" href="mailto:hello@example.com?subject=Nishi-Ogikubo%20story">＋ Add a story</a></div></section>
-<footer class="wrap"><span>NISHI-OGIKUBO / A prototype for a world of local stories.</span><span>Made from curiosity.</span></footer>
-</body></html>
+<nav><a class="logo" href="#top">NISHI-OGIKUBO</a><div class="navlinks"><a href="#explore">Explore</a><a href="#stories">Stories</a><a href="#places">Places</a><a href="#arrive">Arrive</a><a href="#add">Add yours</a></div></nav>
+
+<header class="hero wrap" id="top">
+  <div class="eyebrow">Tokyo / Suginami / Japan</div>
+  <div class="hero-main">
+    <div><h1>西荻窪<br><span style="font-size:.52em;letter-spacing:-.06em">NISHI-OGIKUBO.</span></h1></div>
+    <div class="hero-copy"><strong>まだ知らない場所に、<br>出会いにいく。</strong><span class="jp-note">有名だから行くのではなく、<br>誰かが「ここ、好きなんだよね」と<br>教えてくれた場所へ。</span></div>
+  </div>
+  <div class="hero-bottom"><span>LOCAL FIELD NOTE / 001</span><span>SCROLL ↓</span></div>
+</header>
+
+<section class="manifesto wrap">
+  <div><div class="label">Why this town?</div><h2>町は、<br>名所のリスト<br>じゃない。</h2></div>
+  <div class="manifesto-copy"><p>西荻窪を歩いていると、観光地としての「正解」より、誰かの小さなおすすめに出会うことの方が面白いと思えてくる。</p><p>古い飲み屋。個人書店。ギャラリー。古民家。神社。池。毎月ひらかれる市。何十年もこの町にいる人。最近やってきた人。</p><p><span class="accent">この町を知るということは、そういう断片を集めることなのかもしれない。</span></p></div>
+</section>
+
+<section class="wrap" id="explore">
+  <div class="section-title"><h2>Explore / 町を12の入口から</h2><span>NOT A GUIDEBOOK</span></div>
+  <div class="category-grid">
+    <a class="category" href="#places"><span class="no">01</span><h3>食</h3><p>名物よりも、「地元の人がまた行く」理由。</p></a>
+    <a class="category" href="#places"><span class="no">02</span><h3>喫茶・酒場</h3><p>朝の一杯から、夜のもう一軒まで。</p></a>
+    <a class="category" href="#places"><span class="no">03</span><h3>宗教・信仰</h3><p>神社、寺、祭り、祈り。土地の奥行き。</p></a>
+    <a class="category" href="#places"><span class="no">04</span><h3>文化・アート</h3><p>ギャラリー、ミュージアム、つくる人。</p></a>
+    <a class="category" href="#places"><span class="no">05</span><h3>本</h3><p>古書、新刊、ZINE。本のある町。</p></a>
+    <a class="category" href="#places"><span class="no">06</span><h3>人</h3><p>店主、作家、常連、昔からの住民。</p></a>
+    <a class="category" href="#places"><span class="no">07</span><h3>自然</h3><p>善福寺池、善福寺川、緑と水。</p></a>
+    <a class="category" href="#places"><span class="no">08</span><h3>歴史</h3><p>昔の地図、道、地名、記憶。</p></a>
+    <a class="category" href="#places"><span class="no">09</span><h3>祭り・市</h3><p>茶散歩、手しごと市、地域のお祭り。</p></a>
+    <a class="category" href="#places"><span class="no">10</span><h3>店・もの</h3><p>雑貨、アンティーク、つくり手。</p></a>
+    <a class="category" href="#arrive"><span class="no">11</span><h3>歩く</h3><p>駅からどこへ向かうか。道そのものを楽しむ。</p></a>
+    <a class="category" href="#add"><span class="no">12</span><h3>Hidden</h3><p>検索しても出てこない。でも、誰かには大切。</p></a>
+  </div>
+</section>
+
+<section class="feature" id="stories">
+  <div class="wrap">
+    <div class="section-title"><h2>Field Notes / 西荻の断片</h2><span>EDITED WITH CURIOSITY</span></div>
+    <div class="feature-grid">
+      <article class="big-story"><div><div class="label">Hidden / Walk</div><h3>ちょっと<br>遠回りする。</h3><p>西荻窪は、駅前だけで完結させると少しもったいない。北へ、南へ、一本裏へ。曲がった先に店がある。古い家がある。誰かの生活がある。</p></div></article>
+      <div class="stack">
+        <article class="story-card"><div class="tag">Religion / History</div><h3>池の中の小さな島に、神様がいる。</h3><p>善福寺池の市杵嶋神社には、弁才天信仰と「遅の井」にまつわる土地の物語が残る。観光地として見るより、土地の水と暮らしから読むと面白い。</p></article>
+        <article class="story-card"><div class="tag">People / Culture</div><h3>店より先に、町の人を知りたい。</h3><p>西荻茶散歩は、商店会の垣根を越えて店やスペースがゆるやかにつながる。町の魅力は、個々の店だけでなく「つながり方」にもある。</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="research">
+  <div class="wrap">
+    <div class="section-title"><h2>What makes Nishi-Ogikubo?</h2><span>FIELD RESEARCH</span></div>
+    <div class="research-intro"><h3>「西荻らしさ」は、ひとつじゃない。</h3><p>杉並区の地域調査でも、善福寺公園、昭和レトロな飲み屋街、アンティークショップ、神社仏閣、喫茶店、古民家、古書店、善福寺川など、多様な資源が挙げられている。つまり、この町は単一の観光アイコンではなく、複数の文化が重なっている。</p></div>
+    <div class="signal-grid">
+      <div class="signal"><div class="big">900+</div><h4>年の歴史を伝える</h4><p>井草八幡宮には900余年の歴史が伝わり、流鏑馬などの神事も残る。</p></div>
+      <div class="signal"><div class="big">63</div><h4>店が参加した街の夜</h4><p>2026年5月の「呑らりくらり」では63の飲食店が参加。町を回遊する文化が今も生まれている。</p></div>
+      <div class="signal"><div class="big">月1</div><h4>手しごとが集まる</h4><p>西荻手しごと市は毎月第4日曜、井荻會舘に人・モノ・コトが集まる。</p></div>
+      <div class="signal"><div class="big">本＋</div><h4>本屋だけじゃない本屋</h4><p>URESICA、BREWBOOKS、今野書店など、本を入口に文化や人が交差する場所が多い。</p></div>
+      <div class="signal"><div class="big">水</div><h4>池と川の記憶</h4><p>善福寺池、善福寺川、かつての松庵川。水は西荻周辺の歴史を読む鍵になる。</p></div>
+      <div class="signal"><div class="big">駅→</div><h4>歩くことが前提の町</h4><p>JR西荻窪駅から住宅街、商店、善福寺方面へ。移動そのものをコンテンツにできる。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="places wrap" id="places">
+  <div class="section-title"><h2>Places / 最初の地図</h2><span>START HERE</span></div>
+  <div class="placegrid">
+    <article class="place"><div class="tag">BOOKS / TRAVEL</div><h3>旅の本屋のまど</h3><p>旅をテーマにした本屋。ここから「旅についての旅」を始める。</p><small>Nishi-Ogikubo / North</small></article>
+    <article class="place"><div class="tag">BOOKS</div><h3>今野書店</h3><p>西荻の本屋文化を象徴する一軒。町を歩く前に、選書から町を知る。</p><small>Nishi-Ogikubo / North</small></article>
+    <article class="place"><div class="tag">BOOKS / BEER</div><h3>BREWBOOKS</h3><p>「ビールと書斎のある本屋」。本、人、イベントが混ざる西荻らしい場所。</p><small>Nishi-Ogikubo / North</small></article>
+    <article class="place"><div class="tag">ART / BOOKS</div><h3>URESICA</h3><p>本と雑貨とギャラリー。作家の展示が町の中で続いている。</p><small>Nishi-Ogikubo / South</small></article>
+    <article class="place"><div class="tag">HOUSE / CULTURE</div><h3>松庵文庫</h3><p>古民家という建物そのものが、町の時間を伝える。西荻地域の資源としても挙げられる。</p><small>Shōan</small></article>
+    <article class="place"><div class="tag">BOOKS / NIGHT</div><h3>古本バル 月よみ堂</h3><p>古本と夜の時間。西荻の「本」と「酒」が交差する感覚。</p><small>Nishi-Ogikubo</small></article>
+    <article class="place"><div class="tag">CULTURE</div><h3>杉並アニメーションミュージアム</h3><p>アニメーションを通して、日本の文化を知る。西荻周辺の文化地図に入れておきたい。</p><small>Momoi</small></article>
+    <article class="place"><div class="tag">FAITH / HISTORY</div><h3>市杵嶋神社</h3><p>善福寺池の小島に鎮座。弁才天、「遅の井」、雨乞いなど、水と信仰の物語が残る。</p><small>Zenpukuji</small></article>
+    <article class="place"><div class="tag">FAITH / HISTORY</div><h3>井草八幡宮</h3><p>900余年の歴史が伝わる神社。流鏑馬など、土地の時間を体感できる文化が残る。</p><small>Zenpukuji</small></article>
+    <article class="place"><div class="tag">NATURE</div><h3>善福寺公園</h3><p>池を中心にした緑の場所。西荻を「店の町」だけでなく、歩く町として見る入口。</p><small>Zenpukuji</small></article>
+    <article class="place"><div class="tag">MAKERS / MARKET</div><h3>西荻手しごと市</h3><p>毎月第4日曜、井荻會舘に手づくり品、人、モノ、コトが集まる。</p><small>2026 / Monthly</small></article>
+    <article class="place"><div class="tag">EVENT / TOWN</div><h3>西荻茶散歩</h3><p>「やかん」が目印。店が商店会の垣根を越えてゆるやかにつながる、西荻らしい街歩き文化。</p><small>Chasampo</small></article>
+  </div>
+</section>
+
+<section class="routes" id="arrive">
+  <div class="wrap">
+    <div class="section-title"><h2>Arrive / Access & Walks</h2><span>THE FIRST 10 MINUTES</span></div>
+    <div class="route-grid">
+      <article class="route dark"><div class="label">01 / By train</div><h3>まず、西荻窪駅へ。</h3><p>JR中央・総武線各駅停車が停車。中央線快速の停車も平日ダイヤに設定されている。駅を出たら、目的地へ直行するより「一本だけ裏道へ」がこの町には似合う。</p></article>
+      <article class="route"><div class="label">02 / Walk</div><h3>駅から、町に入る。</h3><p>北口・南口のどちらから歩くかで空気が変わる。店だけを点で巡らず、住宅街、古い建物、寺社、公園までつないで「町の断面」を見る。</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="add">
+  <div class="wrap"><div class="label">The idea behind this site</div><h2>あなたが知っている<br>西荻窪を、教えてほしい。</h2><p>「ここはガイドブックに載っていないけど好き」「この店はこの時間がいい」「この道を歩いてほしい」。そういう一言から、町の地図は育っていく。</p><a class="button" href="mailto:hello@example.com?subject=西荻窪について教えたい">＋ 西荻窪の話を送る</a></div>
+</section>
+
+<section class="sources wrap">
+  <div class="section-title"><h2>Research / Sources</h2><span>VERIFIED FIELD NOTES</span></div>
+  <div class="sourcegrid">
+    <div class="source"><strong>杉並区 文化財・歴史</strong>善福寺、井草八幡宮、市杵嶋神社などの歴史資料。</div>
+    <div class="source"><strong>杉並区 地域調査</strong>西荻地域の地域資源に関する住民アンケート。</div>
+    <div class="source"><strong>西荻茶散歩</strong>地域の店・空間がゆるやかにつながるイベント。</div>
+    <div class="source"><strong>JR東日本</strong>西荻窪駅の路線・時刻・設備情報。</div>
+  </div>
+</section>
+<footer class="wrap"><span>NISHI-OGIKUBO / LOCAL STORIES, OPEN TO THE WORLD.</span><span>Prototype 002 / 2026</span></footer>
+</body>
+</html>
