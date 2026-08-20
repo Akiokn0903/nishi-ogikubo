@@ -1,0 +1,78 @@
+name: 地域情報の追加・修正
+description: 西荻窪の情報、記憶、歩き方、店、文化などを追加・修正します
+title: "[編集提案] "
+body:
+  - type: dropdown
+    id: layer
+    attributes:
+      label: 対象の層
+      options:
+        - 01 食
+        - 02 喫茶・酒場
+        - 03 信仰
+        - 04 文化・アート
+        - 05 本
+        - 06 人
+        - 07 自然・水
+        - 08 歴史
+        - 09 祭り・市
+        - 10 店・もの
+        - 11 歩く
+        - 12 Hidden（路地・記憶・謎）
+        - 複数の層
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: 場所・テーマ
+      placeholder: 例：物豆奇 / 善福寺公園 / 昔あった店 / 好きな路地
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 追加・修正したい内容
+      description: できるだけ具体的に書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: なぜ西荻を理解する上で重要ですか？
+  - type: textarea
+    id: sources
+    attributes:
+      label: 出典・参考URL
+      description: 公式サイト、行政資料、地域メディアなど。記憶・証言の場合は「証言」と書いてください。
+  - type: input
+    id: checked
+    attributes:
+      label: 情報を確認した日
+      placeholder: YYYY-MM-DD
+  - type: dropdown
+    id: relation
+    attributes:
+      label: あなたと対象との関係
+      options:
+        - 地域住民
+        - 元住民
+        - 訪問者・旅行者
+        - 店主・運営者本人
+        - 従業員・関係者
+        - 研究者・取材者
+        - その他
+  - type: textarea
+    id: memory
+    attributes:
+      label: 記憶・証言の場合の補足
+      description: いつ頃の話か、誰から聞いたか、不確かな点などを書いてください。
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: 確認
+      options:
+        - label: 宣伝ではなく、地域の集合知に役立つ形で投稿します。
+          required: true
+        - label: 私人の不要な個人情報は含めていません。
+          required: true
